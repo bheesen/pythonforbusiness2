@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97d739ff9680fd7d9f064ac4ba533ab0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_97d739ff9680fd7d9f064ac4ba533ab0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_97d739ff9680fd7d9f064ac4ba533ab0 = L.map(
+                "map_97d739ff9680fd7d9f064ac4ba533ab0",
+                {
+                    center: [49.226914337199254, 10.508467393886967],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1b65608b80a4fedc9beea37f7c9b7431 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1b65608b80a4fedc9beea37f7c9b7431.addTo(map_97d739ff9680fd7d9f064ac4ba533ab0);
+        
+    
+            var marker_0f918f10ac0447e0f9e2c4516733c6cd = L.marker(
+                [49.306001, 10.566538],
+                {
+}
+            ).addTo(map_97d739ff9680fd7d9f064ac4ba533ab0);
+        
+    
+            var icon_aaca2b7add57a24144dc289b309a39c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a03ae13866cf631ec64ff2d69a7004c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5a90f3cf2b8380840af533ef33f05196 = $(`<div id="html_5a90f3cf2b8380840af533ef33f05196" style="width: 100.0%; height: 100.0%;"><b><a href='http://www.hs-ansbach.de'>Hochschule Ansbach</a></b><br/>Residenzstr. 8<br/>91522 Ansbach<br/><a href='http://www.profheesen.de/images/stories/hsansbachkpi.jpg'>KPI Details</a></div>`)[0];
+                popup_6a03ae13866cf631ec64ff2d69a7004c.setContent(html_5a90f3cf2b8380840af533ef33f05196);
+            
+        
+
+        marker_0f918f10ac0447e0f9e2c4516733c6cd.bindPopup(popup_6a03ae13866cf631ec64ff2d69a7004c)
+        ;
+
+        
+    
+    
+            marker_0f918f10ac0447e0f9e2c4516733c6cd.bindTooltip(
+                `<div>
+                     Ansbach
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f918f10ac0447e0f9e2c4516733c6cd.setIcon(icon_aaca2b7add57a24144dc289b309a39c2);
+            
+    
+            var marker_005cd4867a8a8cdb5c7ef25560e494c1 = L.marker(
+                [49.179810158920844, 10.335907160021717],
+                {
+}
+            ).addTo(map_97d739ff9680fd7d9f064ac4ba533ab0);
+        
+    
+            var icon_7faf8f8c8cb718262cfe8e0cd4efdd26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c43c08ad056c1e72ac60d4d08923234c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0e691a1091457f85dbda8460b22092dc = $(`<div id="html_0e691a1091457f85dbda8460b22092dc" style="width: 100.0%; height: 100.0%;"><b><a href='https://www.hs-ansbach.de/hochschule/aussenstellen/feuchtwangen/'>Campus Feuchtwangen</a></b><br/>An der Hochschule 1<br/>91555 Feuchtwangen<br/><a href='http://www.profheesen.de/images/stories/hsansbachkpi.jpg'>KPI Details</a></div>`)[0];
+                popup_c43c08ad056c1e72ac60d4d08923234c.setContent(html_0e691a1091457f85dbda8460b22092dc);
+            
+        
+
+        marker_005cd4867a8a8cdb5c7ef25560e494c1.bindPopup(popup_c43c08ad056c1e72ac60d4d08923234c)
+        ;
+
+        
+    
+    
+            marker_005cd4867a8a8cdb5c7ef25560e494c1.bindTooltip(
+                `<div>
+                     Feuchtwangen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_005cd4867a8a8cdb5c7ef25560e494c1.setIcon(icon_7faf8f8c8cb718262cfe8e0cd4efdd26);
+            
+    
+            var marker_3a65a30df3b40d1a0485cb87ae07ffd4 = L.marker(
+                [49.24599487764718, 10.495426827478],
+                {
+}
+            ).addTo(map_97d739ff9680fd7d9f064ac4ba533ab0);
+        
+    
+            var icon_09c20ac35af1681d1e25af194061e0e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_768f6a698d64604b6348dbfaedab5c19 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c84650edf9d32137ab29765e5a8d6295 = $(`<div id="html_c84650edf9d32137ab29765e5a8d6295" style="width: 100.0%; height: 100.0%;"><b><a href='https://www.hs-ansbach.de/hochschule/aussenstellen/herrieden/'>Campus Herrieden</a></b><br/>Schernberg 34<br/>91567 Herrieden<br/><a href='http://www.profheesen.de/images/stories/hsansbachkpi.jpg'>KPI Details</a></div>`)[0];
+                popup_768f6a698d64604b6348dbfaedab5c19.setContent(html_c84650edf9d32137ab29765e5a8d6295);
+            
+        
+
+        marker_3a65a30df3b40d1a0485cb87ae07ffd4.bindPopup(popup_768f6a698d64604b6348dbfaedab5c19)
+        ;
+
+        
+    
+    
+            marker_3a65a30df3b40d1a0485cb87ae07ffd4.bindTooltip(
+                `<div>
+                     Herrieden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a65a30df3b40d1a0485cb87ae07ffd4.setIcon(icon_09c20ac35af1681d1e25af194061e0e8);
+            
+    
+            var marker_3f2e0e2bec7dfdfb7cad6ce471d486d7 = L.marker(
+                [49.378980820532924, 10.185865583299957],
+                {
+}
+            ).addTo(map_97d739ff9680fd7d9f064ac4ba533ab0);
+        
+    
+            var icon_9a25f46afdf3f9dd0f120bf531da38fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3d5f93291ed8774f5797b837c286f17 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3792fc4a56e5b4d5741cdf7d1e51c092 = $(`<div id="html_3792fc4a56e5b4d5741cdf7d1e51c092" style="width: 100.0%; height: 100.0%;"><b><a href='https://www.hs-ansbach.de/hochschule/aussenstellen/rothenburg/'>Campus Rothenburg o.d.T</a></b><br/>Hornburgweg 26<br/>91541 Rothenburg o.d.T<br/><a href='http://www.profheesen.de/images/stories/hsansbachkpi.jpg'>KPI Details</a></div>`)[0];
+                popup_e3d5f93291ed8774f5797b837c286f17.setContent(html_3792fc4a56e5b4d5741cdf7d1e51c092);
+            
+        
+
+        marker_3f2e0e2bec7dfdfb7cad6ce471d486d7.bindPopup(popup_e3d5f93291ed8774f5797b837c286f17)
+        ;
+
+        
+    
+    
+            marker_3f2e0e2bec7dfdfb7cad6ce471d486d7.bindTooltip(
+                `<div>
+                     Rothenburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f2e0e2bec7dfdfb7cad6ce471d486d7.setIcon(icon_9a25f46afdf3f9dd0f120bf531da38fe);
+            
+    
+            var marker_f8a3529b666412517cd9f8e2c4ee3e8d = L.marker(
+                [49.0237848288953, 10.958599398635167],
+                {
+}
+            ).addTo(map_97d739ff9680fd7d9f064ac4ba533ab0);
+        
+    
+            var icon_93dfe62b12040b7b14a57b221b0d0135 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d438e3fb855cd6af270e84333bf1b86 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ddfe277c4780da8483cae1c906755326 = $(`<div id="html_ddfe277c4780da8483cae1c906755326" style="width: 100.0%; height: 100.0%;"><b><a href='https://www.hs-ansbach.de/hochschule/aussenstellen/weissenburg/'>Campus Weißenburg</a></b><br/>Richard-Stücklen-Straße 3<br/>91781 Weißenburg i.Bay.<br/><a href='http://www.profheesen.de/images/stories/hsansbachkpi.jpg'>KPI Details</a></div>`)[0];
+                popup_7d438e3fb855cd6af270e84333bf1b86.setContent(html_ddfe277c4780da8483cae1c906755326);
+            
+        
+
+        marker_f8a3529b666412517cd9f8e2c4ee3e8d.bindPopup(popup_7d438e3fb855cd6af270e84333bf1b86)
+        ;
+
+        
+    
+    
+            marker_f8a3529b666412517cd9f8e2c4ee3e8d.bindTooltip(
+                `<div>
+                     Weißenburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f8a3529b666412517cd9f8e2c4ee3e8d.setIcon(icon_93dfe62b12040b7b14a57b221b0d0135);
+            
+</script>
+</html>

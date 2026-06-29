@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dataset xmlns="https://example.org/econ" version="1.0">
+  <Metadata>
+    <Title>Beispieldatensatz: Makroindikatoren 2020–2024</Title>
+    <Description>Synthetic example dataset for GDP (USD, bn), CPI YoY (%), and Unemployment rate (%) for DEU, FRA, USA (2020–2024).</Description>
+    <Created>2025-08-19</Created>
+    <Indicators>
+      <Indicator code="GDP_USD_BN" label="Bruttoinlandsprodukt, laufende Preise (Mrd. US$)" unit="USD Milliarden"/>
+      <Indicator code="CPI_YOY_PCT" label="Verbraucherpreise, Veränderung ggü. Vorjahr" unit="Prozent"/>
+      <Indicator code="UNEMP_RATE_PCT" label="Arbeitslosenquote" unit="Prozent"/>
+    </Indicators>
+  </Metadata>
+  <Observations>
+    <Obs country="DEU" country_name="Deutschland" year="2020" indicator="GDP_USD_BN" value="3846.6"/>
+    <Obs country="DEU" country_name="Deutschland" year="2021" indicator="GDP_USD_BN" value="4257.6"/>
+    <Obs country="DEU" country_name="Deutschland" year="2022" indicator="GDP_USD_BN" value="4071.2"/>
+    <Obs country="DEU" country_name="Deutschland" year="2023" indicator="GDP_USD_BN" value="4456.7"/>
+    <Obs country="DEU" country_name="Deutschland" year="2024" indicator="GDP_USD_BN" value="4580.1"/>
+    <Obs country="DEU" country_name="Deutschland" year="2020" indicator="CPI_YOY_PCT" value="0.5"/>
+    <Obs country="DEU" country_name="Deutschland" year="2021" indicator="CPI_YOY_PCT" value="3.1"/>
+    <Obs country="DEU" country_name="Deutschland" year="2022" indicator="CPI_YOY_PCT" value="7.6"/>
+    <Obs country="DEU" country_name="Deutschland" year="2023" indicator="CPI_YOY_PCT" value="6.1"/>
+    <Obs country="DEU" country_name="Deutschland" year="2024" indicator="CPI_YOY_PCT" value="2.5"/>
+    <Obs country="DEU" country_name="Deutschland" year="2020" indicator="UNEMP_RATE_PCT" value="3.8"/>
+    <Obs country="DEU" country_name="Deutschland" year="2021" indicator="UNEMP_RATE_PCT" value="3.6"/>
+    <Obs country="DEU" country_name="Deutschland" year="2022" indicator="UNEMP_RATE_PCT" value="3.0"/>
+    <Obs country="DEU" country_name="Deutschland" year="2023" indicator="UNEMP_RATE_PCT" value="3.1"/>
+    <Obs country="DEU" country_name="Deutschland" year="2024" indicator="UNEMP_RATE_PCT" value="3.2"/>
+    <Obs country="FRA" country_name="Frankreich" year="2020" indicator="GDP_USD_BN" value="2715.5"/>
+    <Obs country="FRA" country_name="Frankreich" year="2021" indicator="GDP_USD_BN" value="2986.3"/>
+    <Obs country="FRA" country_name="Frankreich" year="2022" indicator="GDP_USD_BN" value="2885.0"/>
+    <Obs country="FRA" country_name="Frankreich" year="2023" indicator="GDP_USD_BN" value="3110.2"/>
+    <Obs country="FRA" country_name="Frankreich" year="2024" indicator="GDP_USD_BN" value="3195.4"/>
+    <Obs country="FRA" country_name="Frankreich" year="2020" indicator="CPI_YOY_PCT" value="0.5"/>
+    <Obs country="FRA" country_name="Frankreich" year="2021" indicator="CPI_YOY_PCT" value="2.1"/>
+    <Obs country="FRA" country_name="Frankreich" year="2022" indicator="CPI_YOY_PCT" value="5.2"/>
+    <Obs country="FRA" country_name="Frankreich" year="2023" indicator="CPI_YOY_PCT" value="4.9"/>
+    <Obs country="FRA" country_name="Frankreich" year="2024" indicator="CPI_YOY_PCT" value="2.4"/>
+    <Obs country="FRA" country_name="Frankreich" year="2020" indicator="UNEMP_RATE_PCT" value="8.0"/>
+    <Obs country="FRA" country_name="Frankreich" year="2021" indicator="UNEMP_RATE_PCT" value="7.9"/>
+    <Obs country="FRA" country_name="Frankreich" year="2022" indicator="UNEMP_RATE_PCT" value="7.3"/>
+    <Obs country="FRA" country_name="Frankreich" year="2023" indicator="UNEMP_RATE_PCT" value="7.2"/>
+    <Obs country="FRA" country_name="Frankreich" year="2024" indicator="UNEMP_RATE_PCT" value="7.4"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2020" indicator="GDP_USD_BN" value="20936.6"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2021" indicator="GDP_USD_BN" value="23149.3"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2022" indicator="GDP_USD_BN" value="25462.7"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2023" indicator="GDP_USD_BN" value="27121.0"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2024" indicator="GDP_USD_BN" value="28210.0"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2020" indicator="CPI_YOY_PCT" value="1.2"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2021" indicator="CPI_YOY_PCT" value="4.7"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2022" indicator="CPI_YOY_PCT" value="8.0"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2023" indicator="CPI_YOY_PCT" value="4.1"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2024" indicator="CPI_YOY_PCT" value="3.1"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2020" indicator="UNEMP_RATE_PCT" value="8.1"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2021" indicator="UNEMP_RATE_PCT" value="5.4"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2022" indicator="UNEMP_RATE_PCT" value="3.6"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2023" indicator="UNEMP_RATE_PCT" value="3.6"/>
+    <Obs country="USA" country_name="Vereinigte Staaten" year="2024" indicator="UNEMP_RATE_PCT" value="4.0"/>
+  </Observations>
+</Dataset>
