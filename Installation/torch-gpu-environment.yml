@@ -1,0 +1,85 @@
+name: torch-gpu
+
+# Zielbasis: Anaconda Distribution 2025.12-2 unter Windows 11
+# Reproduzierbare GPU-Umgebung fuer NVIDIA RTX 5070 Laptop GPU.
+# PyTorch 2.11.0 + CUDA 12.8 unterstuetzt Blackwell / sm_120 und
+# ist mit torchvision 0.26.0 und torchaudio 2.11.0 abgestimmt.
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  # ============================================================
+  # 1) Python und Paketverwaltung
+  # ============================================================
+  - python=3.13
+  - pip
+  - setuptools
+  - wheel
+
+  # ============================================================
+  # 2) Wissenschaftlicher Kern
+  # ============================================================
+  - numpy=2.5
+  - scipy
+  - pandas
+  - statsmodels
+  - scikit-learn=1.9
+  - joblib
+
+  # ============================================================
+  # 3) Visualisierung
+  # ============================================================
+  - matplotlib
+  - seaborn
+  - plotly
+  - folium
+
+  # ============================================================
+  # 4) Datenimport, Dateiformate und grosse Datenmengen
+  # ============================================================
+  - openpyxl
+  - pyarrow
+  - pyreadr
+  - dask
+  - distributed
+
+  # ============================================================
+  # 5) Jupyter und interaktives Arbeiten
+  # ============================================================
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - ipython
+
+  # ============================================================
+  # 6) Spyder-Anbindung
+  #    Spyder wird aus base gestartet.
+  # ============================================================
+  - "spyder-kernels>=3.1,<3.2"
+
+  # ============================================================
+  # 7) Hilfsprogramme und Systeminformationen
+  # ============================================================
+  - py-cpuinfo
+  - psutil
+  - tqdm
+  - filelock
+  - typing_extensions
+  - sympy
+  - networkx
+  - jinja2
+  - fsspec
+  - pillow
+
+  # ============================================================
+  # 8) PyTorch-Stack mit NVIDIA CUDA 12.8
+  #    Geeignet fuer RTX 5070 Laptop GPU / Blackwell / sm_120.
+  #    Kein separates CUDA Toolkit erforderlich.
+  # ============================================================
+  - pip:
+      - --index-url https://download.pytorch.org/whl/cu128
+      - torch==2.11.0
+      - torchvision==0.26.0
+      - torchaudio==2.11.0
